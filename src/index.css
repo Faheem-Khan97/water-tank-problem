@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.tanks {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.container__main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  border: 4px solid rgb(171, 171, 171);
+  height: 150px;
+  width: 120px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.water-level {
+  position: absolute;
+  bottom: 0;
+  height: var(--water-level, 0);
+  width: calc(100% - 8px);
+  background-color: rgb(88, 97, 255);
+  border-bottom-left-radius: 6px;
+  border-radius: 6px;
+  transition: height 1s linear;
+  border-color: rgb(138, 144, 254);
+  border-style: solid;
+  border-width: var(--border);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  min-width: 120px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+}
+
+.empty-btn:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
