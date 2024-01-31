@@ -68,6 +68,8 @@ export const Container = ({ totalWater, setTotalWater }: ContainerProps) => {
         className="add-btn"
         onMouseDown={startFillingWater}
         onMouseUp={stopFillingWater}
+        onPointerUp={startFillingWater}
+        onPointerDown={stopFillingWater}
       >
         Add
       </button>
